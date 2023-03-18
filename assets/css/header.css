@@ -59,7 +59,16 @@
   color: var(--white-color);
   font-size: var(--font-16);
 }
+.aside_open{
+  border-radius: 14px 0 14px;
+}
+.d-none{
+  border-radius: 14px 0 14px;
+}
+.d-sm-block{
+  border-radius: 14px 0 14px;
 
+}
 .main-header .header-top .social-box li:last-child {
   margin-right: var(--space-0);
 }
@@ -287,7 +296,7 @@
   letter-spacing: 0px;
   font-weight: 700;
   padding: 32px 0px;
-  color: var(--main-color);
+  color: #252525;
   font-size: var(--font-16);
   text-transform: capitalize;
   transition: all 0.5s ease-in-out;

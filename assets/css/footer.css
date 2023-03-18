@@ -9,8 +9,9 @@
 
 .main-footer{
 	position:relative;
-	background-color:var(--main-color);
+	background-color: #030f27;
 	overflow: hidden;
+	padding: 50px 0;
 }
 
 .main-footer .upper-box{
@@ -141,6 +142,9 @@
 }
 
 .main-footer .links li{
+	font-weight: 400;
+	font-size: 16px;
+    color: var(--color-eleven);
 	position:relative;
 	margin-bottom:var(--space-20);
 }

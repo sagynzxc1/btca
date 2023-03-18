@@ -17,7 +17,25 @@
   background-size: cover;
   background-position: center center;
 }
-
+.aaimage{
+  position: relative;
+}
+.aaimage::before { 
+  content: ""; 
+  position: absolute; 
+  z-index: 1; 
+  width: 100%; 
+  height: 100%; 
+  background-image: url(../../consultancy/img/1384060.png); 
+  background-position: center; 
+  background-size: 30%; 
+  background-repeat: no-repeat; 
+  opacity: 0; 
+}
+.aaimage:hover::before { 
+  opacity: 0.7; 
+  transition: 0.5s; 
+}
 .main-slider .pattern-layer-one {
   position: absolute;
   left: 0px;
@@ -1222,7 +1240,7 @@
 
 .service-block-style-two h5 a {
   position: relative;
-  color: var(--main-color);
+  color: #0a58ca;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -1849,6 +1867,7 @@
 
 .business-section-three .service-block-style-two .inner-box {
   border-width: 0px;
+  border-radius: 30px 0 30px;
 }
 .business-section-three .service-block-style-two:hover .inner-box:before {
   opacity: 0;
@@ -2311,8 +2330,8 @@
 .business-section-two::before {
   content: url(../images/resource/curve-line.svg);
   position: absolute;
-  top: -70px;
-  left: 0;
+  top:0;
+  left: -320px;
   z-index: -2;
   overflow: hidden;
 }
@@ -2537,7 +2556,7 @@
   position: relative;
   font-family: var(--font-family-heading);
   font-size: var(--font-20);
-  color: var(--main-color);
+  color: #000;
 }
 
 .testimonial-block .lower-box .author-box .designation {

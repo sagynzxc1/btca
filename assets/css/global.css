@@ -49,9 +49,12 @@
 
 :root {
   /* #1C2539 in decimal RGB */
-  --main-color: #1c2539;
+  --main-color: #fff;
   --main-color-rgb: 28, 37, 57;
-
+  --radius_big:30px 0 30px 0;
+  --radius_midl:20px 0 20px 0;
+  --radius_btn:15px 0 15px 0;
+  --content:#0076FE;
   /* #DF0A0A in decimal RGB */
   --color-two: #0066ff;
   --color-two-rgb: 0, 102, 255;
@@ -784,7 +787,7 @@ img {
   -webkit-transition: all 0.3s ease;
 }
 
-.btn .btn-wrap .text-two {
+.btn .btn-wrap .text-two, .btn .btn-wrap .text-three {
   position: absolute;
   top: 100%;
   display: block;
@@ -797,7 +800,12 @@ img {
 .btn .btn-wrap .text-two {
   color: var(--white-color);
 }
-
+.btn .btn-wrap .text-two {
+  color: var(--black-color) !important;
+}
+.btn .btn-wrap .text-three {
+  color: var(--white-color) !important;
+}
 .btn .icon {
   position: relative;
   z-index: 1;
@@ -878,7 +886,7 @@ img {
 
 .btn-three .btn-wrap .text-one,
 .btn-three .btn-wrap .text-two {
-  color: var(--white-color);
+  color: #000;
 }
 
 .btn-three:hover .btn-wrap .text-one,
@@ -990,7 +998,7 @@ img {
 }
 
 .btn-submit.dark {
-  background-color: var(--main-color);
+  background-color: #1c2539;
 }
 .btn-submit.dark:hover {
   background-color: var(--color-two);
@@ -1022,7 +1030,7 @@ img {
 
 .sec-title h1 {
   z-index: 1;
-  color: var(--main-color);
+  color: #1c2539;
   margin-top: var(--space-10);
 }
 
